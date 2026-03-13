@@ -11,7 +11,7 @@ from contextlib import asynccontextmanager
 templates = Jinja2Templates(directory="templates")
 db = None
 cursor = None
-# MySQL connection
+# MySQL connection. for extra credit
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     global db, cursor
